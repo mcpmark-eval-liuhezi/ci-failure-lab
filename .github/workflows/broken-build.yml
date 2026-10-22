@@ -1,0 +1,8 @@
+name: Broken Build Lab
+on: [push]
+jobs:
+  explode:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "boom"
+      - run: exit 1
